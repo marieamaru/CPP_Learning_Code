@@ -2,6 +2,7 @@
 
 int main()
 {
-    std::cout << "Hello World!" << std::endl;
+    int* c = new int[3] {};
+    std::cout << c[1] << std::endl;
     return 0;
 }
