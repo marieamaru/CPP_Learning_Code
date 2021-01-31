@@ -1,22 +1,23 @@
 #pragma once
+#include <iostream>
 
 class Rectangle
 {
 public:
-    Rectangle(float length, float width)
-        : _length { length }, _width { width }
-    {}
+    Rectangle();
+    Rectangle(int v1, int v2);
 
-    float get_length() const { return _length; }
-    float get_width() const { return _width; }
+    void set(int v);
+    int get() const;
 
-    void scale(float ratio)
-    {
-        _length *= ratio;
-        _width *= ratio;
-    }
+    static int _nb;
+    static void call(const Rectangle& d);
 
 private:
-    float _length;
-    float _width;
+    void move();
+
+    static void speak();
+    friend void print(std::ostream& stream, const Rectangle& dog);
+    int _v1;
+    int _v2;
 };

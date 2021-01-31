@@ -4,11 +4,11 @@
 
 int main()
 {
-    Rectangle rect(2.f, 4.f);
-    std::cout << "{ L: " << rect.get_length() << ", W: " << rect.get_width() << " }" << std::endl;
-
-    rect.scale(3);
-    std::cout << "{ L: " << rect.get_length() << ", W: " << rect.get_width() << " }" << std::endl;
-
+    
+    Rectangle d {-1, 3};
+    //Rectangle d2 = d1;
+    //auto v = d.get();
+    //std::cout << d._nb <<std::endl;
+    //print (std::cout, d);
     return 0;
 }
