@@ -6,9 +6,15 @@
 
 | conteneur    | insertion (en tête / en fin) | suppression (en tête / en fin) | accès |
 |--------------|-----------|----------|-----------|
+<<<<<<< HEAD
 | array        |   ---     |   ---    |    ---    |
 | vector       | 𝓞(1)/𝓞(n)|𝓞(1)/𝓞(n  |   𝓞(1)   |
 | deque        | 𝓞(1)/𝓞(n)|𝓞(1)/𝓞(n) |   𝓞(1)   |
+=======
+| array        | N/A       | N/A      |           |
+| vector       |           |          |           |
+| deque        |           |          |           |
+>>>>>>> upstream/master
 | forward_list |           |          |           |
 | list         |           |          |           |
 | set          |           |          |           |
@@ -108,4 +114,8 @@ Pensez bien à modifier le CMakeLists.txt du TP3 ainsi que le fichier Tests.cpp 
 
 Céline Noël, Stéphane Vialette, Mathias Weller  
 C++ Master 1    
+<<<<<<< HEAD
 2020 - 2021
+=======
+2020 - 2021
+>>>>>>> upstream/master
