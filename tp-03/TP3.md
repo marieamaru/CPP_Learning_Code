@@ -7,8 +7,8 @@
 | conteneur    | insertion (en tête / en fin) | suppression (en tête / en fin) | accès |
 |--------------|-----------|----------|-----------|
 | array        |   ---     |   ---    |    ---    |
-| vector       |           |          |           |
-| deque        |           |          |           |
+| vector       | 𝓞(1)/𝓞(n)|𝓞(1)/𝓞(n  |   𝓞(1)   |
+| deque        | 𝓞(1)/𝓞(n)|𝓞(1)/𝓞(n) |   𝓞(1)   |
 | forward_list |           |          |           |
 | list         |           |          |           |
 | set          |           |          |           |
