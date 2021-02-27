@@ -62,5 +62,13 @@ public:
 		return result;
 	}
 
+	virtual PointContainer intersect (const Shape& other) const {
+		return other.intersect(*this);
+	}
+
+	std::ostream& print(std::ostream& os) const override{
+		return os << "circle ";
+	}
+
 	~Circle() = default;
 };

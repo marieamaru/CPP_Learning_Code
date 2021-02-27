@@ -27,7 +27,12 @@ public:
 		position = _position;
 	}
 
-private:
+	std::string get_name() const
+	{
+		return _name;
+	}
+
+protected:
 	const std::string _name;
 	int               _position = 0;
 };

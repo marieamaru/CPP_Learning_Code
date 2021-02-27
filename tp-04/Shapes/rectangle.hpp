@@ -45,5 +45,17 @@ public:
 		return result;
 	}
 
+	virtual PointContainer intersect(const Line& line) const override {
+		PointContainer result;
+		for(const LineSegment& ls: get_border()){
+			result.merge(ls.intersect(line));
+		}
+		filter_points_inside(result);
+		return result;
+	}
+
+	std::ostream& print(std::ostream& os) const override{
+		return os << "rectangle " << lower_left << " & " << upper_right;
+	}
 	~Rectangle() = default;
 };
